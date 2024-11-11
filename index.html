@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTogether - Educação Tecnológica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+    
+
+        <!-- Header com Carrossel -->
+        <header class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-slide active">
+                    <img src="carrosel1.jpg" alt="Banner 1">
+                    <div class="carousel-text">
+                        <h1>Comece a aprender hoje mesmo!</h1>
+                        <p>Descubra o caminho para o sucesso no mercado digital. Inscreva-se e comece agora!</p>
+                        <a href="login.html" class="btn-primary">Inscreva-se Gratuitamente</a>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="carrosel2.jpg" alt="Banner 2">
+                    <div class="carousel-text">
+                        <h1>Conquiste seu espaço na tecnologia!</h1>
+                        <p>Com nossos cursos, o sucesso no mercado digital está ao seu alcance.</p>
+                        <a href="cursos.html" class="btn-primary">Veja Nossos Cursos</a>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="carrosel3.jpg" alt="Banner 3">
+                    <div class="carousel-text">
+                        <h1>Torne-se um especialista!</h1>
+                        <p>Desenvolva habilidades técnicas avançadas com os melhores profissionais.</p>
+                        <a href="#" class="btn-primary">Comece Agora</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Logo e Botões de Ações -->
+            
+                <!-- Logo da empresa -->
+                <div class="logotech">
+                    <img src="logo.png" alt="Logo" class="logo">
+                </div>
+                
+                <!-- Botões de ação (para versões desktop) -->
+                <div class="header-actions">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#">Cursos</a></li>
+                            <li><a href="#">Notícias</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            
+                <!-- Ícone para menu mobile -->
+                <div class="menu-icon" onclick="toggleDropdown()">
+                    &#9776; <!-- Ícone de hambúrguer -->
+                </div>
+                
+                <!-- Modal/dropdown para dispositivos móveis  -->
+                <div class="dropdown-modal" id="dropdownMenu">
+                    <ul>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Curso</a></li>
+                        <li><a href="#">Notícias</a></li>
+                    </ul>
+                </div>
+            </header>
+            
+       
+    
+    
+    
+    <!-- Seção Sobre -->
+    <section id="about" class="about-section">
+        <div class="about-content modal-style">
+            <h2>Sobre a <img src="logo.png" alt="Logo TechTogether" class="logo-about"></h2>
+            <p>
+                A <strong>TechTogether</strong> O TechTogether é uma iniciativa educacional gratuita, fundado em 2018 com o propósito de democratizar o acesso ao conhecimento em programação e desenvolvimento de software.   Nossa missão é construir uma ponte entre aqueles que necessitam de ensino acessível e os sonhos dos mesmos, transformando o ensino tecnológico em algo disponível para todos, oferecendo materiais de alta qualidade de forma gratuita e eliminando as  barreiras mais discutidas na educação, sejam geográficas ou econômicas.
+            </p>
+            <p>
+                Com uma plataforma inovadora e acessível, oferecemos uma ampla variedade de cursos, oficinas e eventos, sempre com foco em um aprendizado prático e colaborativo. Junte-se a nós e transforme seu futuro com a <strong>TechTogether</strong>.
+            </p>
+        </div>
+        
+        <div class="about-gif">
+            <img src="computador.gif" alt="Cursos GIF">
+        </div>
+    </section>
+
+
+    <!-- Seção Cursos -->
+    <section id="cursos" class="cursos-section">
+        <h2 class="section-title">Principais Cursos</h2>
+        <div class="cursos-wrapper">
+           
+            <div class="curso-card">
+               <a href="IntroProg.html"> <img src="logica de programação.jpg" alt="Curso 1"></a>
+                <h3>Introdução à Programação</h3>
+                <p>Aprenda os conceitos básicos de programação e lógica.</p>
+            </div>
+            <div class="curso-card">
+                <a href="DeseWeb.html"> <img src="desenvolvimento-web2.jpg" alt="Curso 2"></a>
+                <h3>Desenvolvimento Web</h3>
+                <p>Construa seu primeiro site com HTML, CSS e JavaScript.</p>
+            </div>
+            <div class="curso-card">
+                <a href="BD.html"><img src="banco de dados2.jpg" alt="Curso 3"></a>
+                <h3>Banco de Dados</h3>
+                <p>Entenda como criar e gerenciar bancos de dados.</p>
+            </div>
+            
+        </div>
+        <div class="ver-mais-button">
+            <a href="cursos.html" class="btn-primary">Ver mais Cursos</a> 
+        </div>
+    </section>
+
+    
+    <!-- Seção de Depoimentos -->
+    <section id="depoimentos" class="depoimentos-section">
+        <h2 class="section-title">Depoimentos de Alunos</h2>
+        <div class="depoimentos-wrapper">
+            <div class="depoimento-card">
+                <img src="aluno1.jpg" alt="Aluno 1" class="depoimento-img">
+                <h3>Curso: Desenvolvimento Web</h3>
+                <p>"A TechTogether me ajudou a entender melhor o desenvolvimento e agora sou capaz de criar meu próprio site!"</p>
+            </div>
+            <div class="depoimento-card">
+                <img src="aluno2.jpg" alt="Aluno 2" class="depoimento-img">
+                <h3>Curso: Introdução à Programação</h3>
+                <p>"Os cursos são bem estruturados e os instrutores são muito atenciosos."</p>
+            </div>
+            <div class="depoimento-card">
+                <img src="aluno3.jpg" alt="Aluno 3" class="depoimento-img">
+                <h3>Curso: Banco de Dados</h3>
+                <p>"O curso de Banco de Dados mudou a forma como vejo a tecnologia!"</p>
+            </div>
+            <div class="depoimento-card">
+                <img src="aluno4.jpg" alt="Aluno 4" class="depoimento-img">
+                <h3>Curso: Design de Interfaces</h3>
+                <p>"Aprendi a criar interfaces incríveis e funcionais. Super recomendo!"</p>
+            </div>
+            <div class="depoimento-card">
+                <img src="aluno5.jpg" alt="Aluno 5" class="depoimento-img">
+                <h3>Curso: Ciência de Dados</h3>
+                <p>"Agora sou capaz de analisar dados e extrair insights valiosos."</p>
+            </div>
+            <div class="depoimento-card">
+                <img src="aluno6.jpg" alt="Aluno 6" class="depoimento-img">
+                <h3>Curso: Programação em Python</h3>
+                <p>"O curso de Python foi muito útil para minha carreira. Estou muito satisfeito!"</p>
+            </div>
+        </div>
+        <div class="navigation">
+            <button id="prev">◀</button>
+            <button id="next">▶</button>
+        </div>
+    </section>
+
+   <!-- Seção de Newsletter -->
+<section id="newsletter" class="newsletter-section">
+    <h2 class="section-title">Inscreva-se na Nossa Newsletter</h2>
+    <div class="newsletter-wrapper">
+        <div class="newsletter-card">
+            <img src="imagem1.jpg" alt="Dicas e Truques">
+            <h3>Receba Dicas e Truques</h3>
+            <p>Fique por dentro das melhores dicas de programação e desenvolvimento.</p>
+        </div>
+        <div class="newsletter-card">
+            <img src="imagem2.jpg" alt="Promoções Exclusivas"> 
+            <h3>Promoções Exclusivas</h3>
+            <p>Receba ofertas especiais e promoções somente para assinantes.</p>
+        </div>
+        <div class="newsletter-card">
+            <img src="imagem3.jpg" alt="Novidades da TechTogether"> 
+            <h3>Novidades da TechTogether</h3>
+            <p>Seja o primeiro a saber sobre novos cursos e recursos.</p>
+        </div>
+    </div>
+    
+    <div class="newsletter-modal">
+        <h2 class="newsletter-title">Inscreva-se na nossa Newsletter</h2> 
+        <form id="newsletterForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit" class="btn-primary">Inscrever-se</button>
+        </form>
+    </div>
+</section>
+
+<!-- Rodapé -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="logo.png" alt="Logo da TechTogether">
+        </div>
+        <div class="footer-contact">
+            <h3>Contato</h3>
+            <p>Email: contato@techtogether.com</p>
+            <p>Telefone: (11) 99999-9999</p>
+        </div>
+        <div class="footer-sections">
+            <h3>Seções do Site</h3>
+            <ul>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h3>Redes Sociais</h3>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 TechTogether. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+
+    <script src="scripts.js">
+        
+    </script>
+</body>
+</html>

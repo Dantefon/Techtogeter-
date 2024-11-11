@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil do Aluno</title>
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+    <div class="profile-container">
+        <!-- Seção do perfil do aluno -->
+        <div class="profile-header">
+            <img src="perfil.jpg" alt="Foto do Aluno" class="profile-image">
+            <h2 id="student-name">Eduardo</h2>
+            <p id="student-email">email</p>
+        </div>
+
+        <!-- Seção de cursos inscritos -->
+        <div class="cursos-inscritos">
+            <h3>Cursos Inscritos</h3>
+            <div class="curso-container">
+                <div class="curso-card">
+                    <a href="https://www.cin.ufpe.br/~tjs2/courses/logica_de_programacao/aula01/files/AULA-01.pdf"> <img src="logica de programação.jpg" alt="Curso 1"></a>
+                     <h3>Introdução à Programação</h3>
+                     <p>Aprenda os conceitos básicos de programação e lógica.</p>
+                 </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+       
+        document.addEventListener('DOMContentLoaded', () => {
+            const email = localStorage.getItem('userEmail');  
+            if (email) {
+                document.getElementById('student-email').textContent = email;
+            }
+        });
+    </script>
+</body>
+</html>

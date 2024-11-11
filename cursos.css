@@ -1,0 +1,408 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    
+    
+}
+/* Estilos para o ícone de menu no header */
+
+.logotech {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    height: 120px;
+}
+.header-actions-container {
+    position: relative; 
+    z-index: 10;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    background-color:#0056b3; 
+    padding: 10px 0;
+}
+.header-actions {
+    position: absolute;
+    top: 40px;
+    left: 45%;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+/* Logo */
+.logo {
+    height: 130px;
+    margin-right: 20px;
+}
+
+/* Lista de navegação para desktop */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 10px 20px;
+    background-color: #28A745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para o ícone de menu dropdown  */
+.menu-icon {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    z-index: 15; 
+}
+
+/* Modal dropdown escondido */
+.dropdown-modal {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background-color: #28A745;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 20;
+}
+
+.dropdown-modal ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-modal ul li {
+    margin-bottom: 10px;
+}
+
+.dropdown-modal ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.dropdown-modal ul li a:hover {
+    background-color: #218838;
+}
+
+/* Responsividade para telas pequenas (mobile) */
+@media (max-width: 768px) {
+    .header-actions {
+        display: none; 
+    }
+
+    .menu-icon {
+        display: block; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    h1{
+        margin-left: 100px;
+
+    }
+}
+
+
+
+.categories__elements--home {
+    z-index: 10;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 200px;
+    margin-left: 350px;
+    margin-bottom: 350px;
+
+}
+
+@media screen and (min-width: 768px) {
+    .categories__elements--home {
+        -webkit-box-pack: start;
+        justify-content: start;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .categories__elements--home {
+        width: fit-content;
+        display: grid;
+        grid-gap: 8px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "programacao front-end data-science inteligencia-artificial" "devops design-ux mobile inovacao-gestao";
+    }
+}
+
+.categories__wrapper--home {
+    min-height: 64px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    box-shadow: 5px 12px 12px rgba(0, 0, 0, .04);
+    background-color: #22ca7c;
+    opacity: 0;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    padding: .0625rem;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%);
+    width: calc(50% - 6px);
+}
+
+@media screen and (min-width: 768px) {
+    .categories__wrapper--home {
+        width: calc(33% - 6px);
+    }
+}
+
+.categories__wrapper--home-content {
+    background-color: #0e1e41;
+    min-height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%);
+}
+
+@media screen and (min-width: 768px) {
+    .categories__wrapper--home-content {
+        -webkit-box-pack: start;
+        justify-content: start;
+    }
+}
+
+.categories__wrapper--home:hover {
+    background-color: #2BDEFD;
+}
+
+@media screen and (min-width: 1024px) {
+    .categories__wrapper--home:hover {
+        position: relative;
+        top: -10px;
+        -webkit-transition: top 0.3s ease;
+        transition: top 0.3s ease;
+    }
+}
+
+.categories__wrapper--home:nth-child(odd) {
+    animation-name: slideInFromLeft;
+}
+
+.categories__wrapper--home:nth-child(even) {
+    animation-name: slideInFromRight;
+}
+
+@media screen and (min-width: 768px) {
+    .categories__wrapper--home:nth-child(-n+9) {
+        animation-name: slideInFromLeft;
+        animation-delay: 0.5s;
+    }
+    .categories__wrapper--home:nth-child(-n+6) {
+        animation-name: slideInFromLeft;
+        animation-delay: 0.25s;
+    }
+    .categories__wrapper--home:nth-child(-n+3) {
+        animation-name: slideInFromLeft;
+        animation-delay: 0s;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .categories__wrapper--home {
+        width: 100%;
+        max-width: 200px;
+        min-height: 200px;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        font-size: 1rem;
+        animation-delay: 1s;
+    }
+    .categories__wrapper--home:not(:hover) {
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+    }
+    .categories__wrapper--home.--mobile {
+        grid-area: mobile;
+    }
+    .categories__wrapper--home.--programacao {
+        grid-area: programacao;
+    }
+    .categories__wrapper--home.--front-end {
+        grid-area: front-end;
+    }
+    .categories__wrapper--home.--devops {
+        grid-area: devops;
+    }
+    .categories__wrapper--home.--design-ux {
+        grid-area: design-ux;
+    }
+    .categories__wrapper--home.--data-science {
+        grid-area: data-science;
+    }
+    .categories__wrapper--home.--inovacao-gestao {
+        grid-area: inovacao-gestao;
+    }
+    .categories__wrapper--home.--inteligencia-artificial {
+        grid-area: inteligencia-artificial;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .categories__wrapper--home {
+        animation-delay: 0.5s;
+    }
+    .categories__wrapper--home:nth-child(-n+6) {
+        animation-delay: 0.5s;
+    }
+    .categories__wrapper--home:nth-child(-n+4) {
+        animation-delay: 0s;
+    }
+}
+
+.categories__svg-wrapper--home {
+    max-width: 24px;
+    max-height: 24px;
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .categories__svg-wrapper--home {
+        display: block;
+    }
+}
+
+.categories__svg-wrapper--home svg {
+    max-width: inherit;
+    max-height: inherit;
+}
+
+.categories__link__text--home {
+    display: inline-block;
+    font-weight: 400;
+    font-size: .75rem;
+}
+
+@media screen and (min-width: 768px) {
+    .categories__link__text--home {
+        margin-top: .8125rem;
+    }
+}
+
+.categories__link__category-name--home {
+    font-weight: 700;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-top: .3125rem;
+    font-size: .9375rem;
+}
+
+@media screen and (min-width: 768px) {
+    .categories__link__category-name--home {
+        font-size: .8125rem;
+    }
+}
+
+.categories__link--home {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.categories__calls--home {
+    display: none;
+    z-index: 12;
+    font-size: .75rem;
+    line-height: 1.5;
+    margin-top: .75rem;
+}
+
+@media screen and (min-width: 768px) {
+    .categories__calls--home {
+        display: block;
+    }
+}
+
+.categories__calls--home a {
+    color: #D7F9FF;
+}
+
+.categories__calls__link-see-more--home,
+.categories__calls__description--home {
+    text-decoration: none;
+}
+
+.categories__calls__link-see-more--home:hover,
+.categories__calls__description--home:hover {
+    text-decoration: underline;
+    opacity: .8;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+    100% {
+        opacity: 1;
+    }
+}

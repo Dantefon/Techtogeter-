@@ -1,0 +1,561 @@
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/*  Carrossel */
+.carousel-container {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.carousel {
+    height: 100%;
+    position: relative;
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 0;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-text {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-text h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.carousel-text p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.btn-primary {
+    background-color: #28A745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+}
+/* Estilos para o ícone de menu no header */
+
+.logotech {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    height: 120px;
+}
+
+.header-actions {
+    position: absolute;
+    top: 40px;
+    left: 45%;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+/* Logo */
+.logo {
+    height: 130px;
+    margin-right: 20px;
+}
+
+/* Lista de navegação para desktop */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 10px 20px;
+    background-color: #28A745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para o ícone de menu dropdown */
+.menu-icon {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    z-index: 15;
+}
+
+/* Modal dropdown escondido */
+.dropdown-modal {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background-color: #28A745;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 20;
+}
+
+.dropdown-modal ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-modal ul li {
+    margin-bottom: 10px;
+}
+
+.dropdown-modal ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.dropdown-modal ul li a:hover {
+    background-color: #218838;
+}
+
+/* Responsividade para telas mobile */
+@media (max-width: 768px) {
+    .header-actions {
+        display: none; 
+    }
+
+    .menu-icon {
+        display: block; 
+    }
+}
+
+
+
+/* Seção Sobre */
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    background-color: transparent; 
+}
+
+.modal-style {
+    background-color: #28A745; 
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.modal-style h2 {
+    font-size: 2.5em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-style h2 img.logo-about {
+    height: 150px;
+    margin-left: 10px;
+}
+
+.modal-style p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-gif {
+    width: 40%;
+}
+
+.about-gif img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .modal-style, .about-gif {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .modal-style h2 {
+        justify-content: center;
+    }
+}
+/* Estilos da Seção de Cursos */
+.cursos-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+
+
+
+.ver-mais-button {
+    text-align: center; 
+    margin-top: 2rem;
+}
+
+.ver-mais-button a {
+    display: inline-block; 
+    padding: 0.5rem 2rem; 
+    background-color: #4CAF50; 
+    color: white; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    transition: background-color 0.3s; 
+}
+
+.ver-mais-button a:hover {
+    background-color: #45a049; 
+}
+
+/* Modal para os cards */
+.cursos-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    background-color: #28A745; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os cards de cursos */
+.curso-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.curso-card:hover {
+    transform: scale(1.05);
+}
+
+.curso-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.curso-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.curso-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .cursos-wrapper {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .curso-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* Estilos da Seção de Depoimentos */
+.depoimentos-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.depoimentos-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.depoimentos-slide {
+    transition: transform 0.5s ease-in-out; 
+    display: flex; 
+    width: 100%; 
+    
+}
+
+.depoimento-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+   display: flexbox;
+}
+
+.depoimento-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%; 
+    margin-bottom: 15px;
+}
+
+.navigation {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #28A745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Newsletter */
+.newsletter-section {
+    padding: 2rem;
+    background-color: #e6ffe6; 
+}
+
+.newsletter-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.newsletter-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 30%;
+    text-align: center;
+    position: relative; 
+}
+
+.newsletter-card img {
+    width: 100%; 
+    border-radius: 10px 10px 0 0; 
+    margin-bottom: 1rem; 
+}
+
+.newsletter-title {
+    margin-bottom: 1rem; 
+    text-align: center; 
+}
+
+
+.newsletter-card h3 {
+    margin-bottom: 0.5rem; 
+}
+
+.newsletter-card p {
+    font-size: 0.9rem; 
+}
+
+.newsletter-modal {
+    background: #007BFF; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    padding: 2rem; 
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+.newsletter-modal h2 {
+    margin-bottom: 1rem; 
+}
+
+.newsletter-modal label {
+    display: block; 
+    margin-top: 1rem; 
+}
+
+.newsletter-modal input {
+    width: 100%; 
+    padding: 0.5rem;
+    margin-top: 0.5rem; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+@media (max-width: 768px) {
+    .newsletter-wrapper {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .newsletter-card {
+        width: 90%; 
+        margin-bottom: 2rem; 
+    }
+
+    .newsletter-form-wrapper {
+        flex-direction: column; 
+    }
+
+    .newsletter-form input {
+        width: 90%; 
+        margin-bottom: 1rem; 
+    }
+}
+
+.btn-primary {
+    background-color: #28a745; 
+    color: white; 
+    padding: 0.5rem 1rem; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-top: 20px;
+        
+}
+
+.btn-primary:hover {
+    background-color: #218838; 
+}
+
+
+.footer {
+    background-color: #333; 
+    color: white; 
+    padding: 2rem 0; 
+    text-align: center; 
+}
+
+.footer-container {
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.footer-logo img {
+    max-width: 250px; 
+    margin-bottom: 1rem; 
+}
+
+.footer h3 {
+    margin-bottom: 1rem; 
+}
+
+.footer-contact p, .footer-sections ul, .footer-social a {
+    margin: 0.5rem 0; 
+    color: #bbb; 
+}
+
+.footer-sections ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.footer-sections li {
+    margin: 0.5rem 0; 
+}
+
+.footer-sections a {
+    color: #bbb; 
+    text-decoration: none; 
+}
+
+.footer-sections a:hover {
+    text-decoration: underline; 
+}
+
+.footer-bottom {
+    margin-top: 2rem; 
+    font-size: 0.8rem; 
+}
+
+
+
+
+
+
+
+
+
+
+

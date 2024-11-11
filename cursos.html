@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTogether - Educação Tecnológica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cursos.css">
+</head> 
+<body>
+     <!-- Logo da empresa -->
+     <div class="header-actions-container">
+        
+     </div><div class="logotech">
+        <a href="index.html"><img src="logo.png" alt="Logo" class="logo"></a>
+    </div>
+    
+    <!-- Botões de ação (para versões desktop) -->
+    
+    <div class="header-actions">
+        <nav>
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="cursos.html">Curso</a></li>
+                <li><a href="#">Notícias</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+    <!-- Ícone  para menu mobile -->
+    <div class="menu-icon" onclick="toggleDropdown()">
+        &#9776; 
+    </div>
+    
+    <!-- Modal/dropdown para dispositivos móveis -->
+    <div class="dropdown-modal" id="dropdownMenu">
+        <ul>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Curso</a></li>
+            <li><a href="#">Notícias</a></li>
+        </ul>
+    </div>
+</header>
+
+<h1 style="margin-left: 500px;margin-top: 100px;">Cursos Disponíveis</h1>
+<nav class="categories--home">
+    <div class="categories__elements--home">
+
+        <div class="categories__wrapper--home --programacao" style="--color-var: #00c86f">
+            <div class="categories__wrapper--home-content">
+                <a class="categories__link--home" href="IntroProg.html" ></a>
+                <div class="categories__main-info--home">
+                    <div class="categories__svg-wrapper--home">
+                       
+                    </div>
+                    <div class="categories__texts" style="color:#00c86f;">
+                        <span class="categories__link__text--home">Curso</span>
+                        <h2 class="categories__link__category-name--home">Introdução a Programação</h2>
+                    </div>
+                </div>
+                <nav class="categories__calls--home">
+                   <p style="color: white;">Lógica,</p>
+                   
+
+                   
+                </nav>
+            </div>
+        </div>
+
+        <div class="categories__wrapper--home --front-end" style="--color-var: #6bd1ff">
+            <div class="categories__wrapper--home-content">
+                <a class="categories__link--home" href="DeseWeb.html"></a>
+                <div class="categories__main-info--home">
+                    <div class="categories__svg-wrapper--home">
+                        <svg class="pagina-categoria__svg--home categories__svg--home" style="fill:#6bd1ff" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="/svg,1720710817/categorias#icon-categorias-front-end"></use>
+                        </svg>
+                    </div>
+                    <div class="categories__texts" style="color:#6bd1ff;">
+                        <span class="categories__link__text--home">Curso</span>
+                        <h2 class="categories__link__category-name--home">Desenvolvimento-Web</h2>
+                    </div>
+                </div>
+                <nav class="categories__calls--home">
+                   
+
+                </nav>
+            </div>
+        </div>
+
+        <div class="categories__wrapper--home --data-science" style="--color-var: #9cd33b">
+            <div class="categories__wrapper--home-content">
+                <a class="categories__link--home" href="BD.html"></a>
+                <div class="categories__main-info--home">
+                    <div class="categories__svg-wrapper--home">
+                        <svg class="pagina-categoria__svg--home categories__svg--home" style="fill:#9cd33b" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="/svg,1720710817/categorias#icon-categorias-data-science"></use>
+                        </svg>
+                    </div>
+                    <div class="categories__texts" style="color:#9cd33b;">
+                        <span class="categories__link__text--home">Curso</span>
+                        <h2 class="categories__link__category-name--home">Banco de Dados</h2>
+                    </div>
+                </div>
+                <nav class="categories__calls--home">
+
+
+                </nav>
+            </div>
+        </div>
+        <div class="categories__wrapper--home --devops" style="--color-var: #f16165">
+            <div class="categories__wrapper--home-content">
+                <a class="categories__link--home" href="IA.html" ></a>
+                <div class="categories__main-info--home">
+                    <div class="categories__svg-wrapper--home">
+                        <svg class="pagina-categoria__svg--home categories__svg--home" style="fill:#f16165" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="/svg,1720710817/categorias#icon-categorias-devops"></use>
+                        </svg>
+                    </div>
+                    <div class="categories__texts" style="color:#f16165;">
+                        <span class="categories__link__text--home">Curso</span>
+                        <h2 class="categories__link__category-name--home">Inteligência Artificial</h2>
+                    </div>
+                </div>
+                <nav class="categories__calls--home">
+
+
+                </nav>
+            </div>
+        </div>
+        
+        <div class="categories__wrapper--home --design-ux" style="--color-var: #dc6ebe">
+            <div class="categories__wrapper--home-content">
+                <a class="categories__link--home" href="/escola-design-ux" aria-label="Clique aqui e acesse a página da escola Design e UX"></a>
+                <div class="categories__main-info--home">
+                    <div class="categories__svg-wrapper--home">
+                        <svg class="pagina-categoria__svg--home categories__svg--home" style="fill:#dc6ebe" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="/svg,1720710817/categorias#icon-categorias-design-ux"></use>
+                        </svg>
+                    </div>
+                    <div class="categories__texts" style="color:#dc6ebe;">
+                        <span class="categories__link__text--home">Escola_</span>
+                        <h2 class="categories__link__category-name--home">Design e UX</h2>
+                    </div>
+                </div>
+                <nav class="categories__calls--home">
+
+
+                </nav>
+            </div>
+        </div>
+        
+        <div class="categories__wrapper--home --mobile" style="--color-var: #ffbb33">
+            <div class="categories__wrapper--home-content">
+                <a class="categories__link--home" href="/escola-mobile" aria-label="Clique aqui e acesse a página da escola Mobile"></a>
+                <div class="categories__main-info--home">
+                    <div class="categories__svg-wrapper--home">
+                        <svg class="pagina-categoria__svg--home categories__svg--home" style="fill:#ffbb33" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="/svg,1720710817/categorias#icon-categorias-mobile"></use>
+                        </svg>
+                    </div>
+                    <div class="categories__texts" style="color:#ffbb33;">
+                        <span class="categories__link__text--home">Escola_</span>
+                        <h2 class="categories__link__category-name--home">Mobile</h2>
+                    </div>
+                </div>
+                <nav class="categories__calls--home">
+
+
+                </nav>
+            </div>
+        </div>
+        
+    </div>
+</nav>
+
+
+
+
+
+
+
+<!-- Rodapé -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="logo.png" alt="Logo da TechTogether">
+        </div>
+        <div class="footer-contact">
+            <h3>Contato</h3>
+            <p>Email: contato@techtogether.com</p>
+            <p>Telefone: (11) 99999-9999</p>
+        </div>
+        <div class="footer-sections">
+            <h3>Seções do Site</h3>
+            <ul>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h3>Redes Sociais</h3>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 TechTogether. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+
+    <script src="scripts.js">
+        
+    </script>
+</body>
+</html>
